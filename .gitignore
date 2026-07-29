@@ -10,3 +10,10 @@ __pycache__/
 
 # VS Code
 .vscode/
+
+__pycache__/
+*.py[cod]
+
+data/
+*.pdf
+
