@@ -17,9 +17,9 @@ def chunk_doc(document):
 			chunk_num +=1
 	return chunks
 
-doc = pr.read_pdf("data/sample/ACSE04.pdf")
-chunks = chunk_doc(doc)
-print(len(chunks))
-print(chunks[0:4])
+# doc = pr.read_pdf("data/sample/ACSE04.pdf")
+# chunks = chunk_doc(doc)
+# print(chunks)
+# print(chunks[0:4])
 
 
