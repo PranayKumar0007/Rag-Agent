@@ -17,3 +17,12 @@ __pycache__/
 data/
 *.pdf
 
+# Python
+.venv/
+__pycache__/
+
+# Environment
+.env
+
+# Qdrant
+qdrant_storage/
