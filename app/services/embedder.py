@@ -10,8 +10,8 @@ def embed(chunks:list):
 	embeddings = model.encode(texts)
 	return embeddings
 
-doc = read_pdf("data/sample/ACSE04.pdf")
-chunks = chunk_doc(doc)
-embeddings = embed(chunks)
-print(len(embeddings))
-print(len(embeddings[0]))
+# doc = read_pdf("data/sample/ACSE04.pdf")
+# chunks = chunk_doc(doc)
+# embeddings = embed(chunks)
+# print(len(embeddings))
+# print(len(embeddings[0]))
