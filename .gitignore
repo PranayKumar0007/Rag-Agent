@@ -1,28 +1,19 @@
 # Virtual Environment
 .venv/
 
-# Python cache
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 
-# Environment variables
+# Environment
 .env
 
 # VS Code
 .vscode/
 
-__pycache__/
-*.py[cod]
-
+# Sample Data
 data/
 *.pdf
-
-# Python
-.venv/
-__pycache__/
-
-# Environment
-.env
 
 # Qdrant
 qdrant_storage/

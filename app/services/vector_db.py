@@ -19,7 +19,7 @@ client.recreate_collection(
     )
 )
 
-doc = read_pdf("data/sample/ACSE04.pdf")
+doc = read_pdf("data/sample/dataset_1.pdf")
 chunks = chunk_doc(doc)
 embeddings = embed(chunks)
 
@@ -40,8 +40,8 @@ for chunk,embedding in zip(chunks,embeddings):
 client.upsert(
 	collection_name = "documents",
 	points = points)
-print(client.count("documents"))
+# print(client.count("documents"))
 
-print(len(chunks))
-print(len(embeddings))
-print(len(embeddings[0]))
+# print(len(chunks))
+# print(len(embeddings))
+# print(len(embeddings[0]))
