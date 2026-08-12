@@ -15,12 +15,7 @@ def read_pdf(path:str):
 			pages.append(each_p)
 	document = Document(path,pages)
 	return document
-	
-# document = read_pdf("data/sample/ACSE04.pdf")
-# print(document)
-# # print(document.pages)
-# print(document.pages)
-# # print(document.pages[0].text[:300])
+
 	
 		
 		

@@ -14,9 +14,9 @@ def search(query:str):
 				query=query_embeddings,
 				limit = 3
 			)
-	return result
+	retrieved_chunks = []
+	for point in result.points:
+		each_chunk = {"score":point.score,"text":point.payload["text"],"page":point.payload["page"],"chunk":point.payload["chunk"],"document":point.payload["document"]}
+		retrieved_chunks.append(each_chunk)
+	return retrieved_chunks
 
-result = search("Describe leadership and its commitments?")
-
-	
-print(result)

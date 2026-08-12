@@ -40,8 +40,3 @@ for chunk,embedding in zip(chunks,embeddings):
 client.upsert(
 	collection_name = "documents",
 	points = points)
-# print(client.count("documents"))
-
-# print(len(chunks))
-# print(len(embeddings))
-# print(len(embeddings[0]))
